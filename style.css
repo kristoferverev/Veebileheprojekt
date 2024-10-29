@@ -1,0 +1,37 @@
+.pais_riba button {
+    margin-top: 50; 
+    background-color: #D8B4A0; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.pais_riba button:hover{
+    background-color: red;
+}
+
+.pais_riba{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #EFF1F3;
+    color: white;
+    padding: 1em;
+    z-index: 1000; 
+}
+
+body{
+    background-color: #223843;
+    padding-top: 80px;
+}
+
+.teksti_kast {
+    background-color: #fff;
+    text-align: justify;
+    padding: 30px;
+    margin: 20px auto; 
+    max-width: 600px;
+    font-size: larger;
+}
