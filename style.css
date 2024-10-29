@@ -1,0 +1,29 @@
+h1 {
+    color: orange;
+    text-align: center;
+  }
+
+p {
+    color: blue;
+    text-align: center;
+}
+body {
+
+    
+}
+.button-container {
+    text-align: center;
+    margin-top: 0; 
+
+}
+.button1 {
+    color: red;
+    background-color: pink;
+    
+}
+.button2 {
+    color: blueviolet
+}
+.button3 {
+    color: brown
+}
