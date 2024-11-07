@@ -1,26 +1,9 @@
 # Pumpamiskoondise wiki
 
 ### Mida veebileht tutvustab või mis on selle lehe eesmärk?
-
+Veebilehe eesmärk on pakkuda lehe külastajale ülevaadet erinevatest Tartu jõusaalidest. Pumpamiskoondise leht tutvustab jõusaale, pakkudes kasutajale  sorteerimisvõimalust asukoha, hinna, lahtiolekuaja ning treeningtüübi jaoks. Lisaks on lehel väljatoodud ka näidistreeningkavad, mis annavad külastajale ülevaate erinevatest treeningtüüpidest, mida treeningutega alustades kasutada on võimalik.
 ### Kes on tiimiliikmed?
+Tiimi liikmed on Markus Sirts, Nele-Liis Võhma ja Kristofer Robin Verev.
 
 ### Milline on tiimisisene tööjaotus?
-
-#223843
-#EFF1F3
-#DBD3D8
-#D8B4A0
-#D77A61
-
-
-body {
-    background-image:image-set('image.webp');
-    background-repeat: no-repeat;
-    background-size: cover  
-}
-
-        <div class="pais_nuppud">
-            <button class="button1"></button>
-            <button class="button2">Button 2</button>
-            <button class="button3">Button 3</button>
-        </div>
+Meie tiimisisene tööjaotus on dünaamiline ja ülesanded on jaotatud vastavalt iga liikme soovile ja oskustele. Töö käigus toetatakse üksteist, et saavutada projekti ühised eesmärgid 
