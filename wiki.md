@@ -6,4 +6,4 @@ Veebilehe eesmärk on pakkuda lehe külastajale ülevaadet erinevatest Tartu jõ
 Tiimi liikmed on Markus Sirts, Nele-Liis Võhma ja Kristofer Robin Verev.
 
 ### Milline on tiimisisene tööjaotus?
-Meie tiimisisene tööjaotus on dünaamiline ja ülesanded on jaotatud vastavalt iga liikme soovile ja oskustele. Töö käigus toetatakse üksteist, et saavutada projekti ühised eesmärgid 
+Meie tiimisisene tööjaotus on dünaamiline ja ülesanded on jaotatud vastavalt iga liikme soovile ja oskustele. Töö käigus toetatakse üksteist, et saavutada projekti ühised eesmärgid.
