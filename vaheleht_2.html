@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>
-        Pumpamiskoondis
-        </title>
+        <title>Pumpamiskoondis - Treeningkavad</title>
     </head>
-    <nav class="pais_riba">
-            <div class="pais_nuppud">
-                <a href="vaheleht_1.html"><button class="nupp1">Võrdlus</button></a>
-                <a href="index.html"><button class="nupp2">Kodu</button></a>
-                <a href="vaheleht_2.html"><button class="nupp3">Kavad</button></a>
-            </div>
-    </nav>
-<body>
-    <h1>
-        Pumpamiskoondis
-    </h1>
 
+<body class="kavad_leht">
+    <nav class="pais_riba">
+        <div class="pais_nuppud">
+            <a href="vaheleht_1.html"><button class="nupp1">Võrdlus</button></a>
+            <a href="index.html"><button class="nupp2">Kodu</button></a>
+            <a href="vaheleht_2.html"><button class="nupp3">Kavad</button></a>
+        </div>
+    </nav>
+
+    <h1>Pumpamiskoondis - Treeningkavad</h1>
+    
+    <div class="raamat">
+        <div class="leht" id="leht1">
+            <h2>Kava 1</h2>
+            <p>Sissejuhatus jõusaali kava 1.</p>
+        </div>
+        <div class="leht" id="leht2">
+            <h2>Kava 2</h2>
+            <p>Sissejuhatus jõusaali kava 2.</p>
+        </div>
+        <div class="leht" id="leht3">
+            <h2>Kava 3</h2>
+            <p>Sissejuhatus jõusaali kava 3.</p>
+        </div>
+        <div class="lehe_nupud">
+        <button onclick="keerataLehte('tagasi')">← Tagasi</button>
+        <button onclick="keerataLehte('edasi')">Edasi →</button>
+        </div>
+    </div>
+    <script src="raamat.js"></script>
 </body>
 </html>
