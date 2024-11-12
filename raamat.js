@@ -1,18 +1,82 @@
-let currentPage = 1;
-const totalPages = 3;
+// Viited DOM-elementidele
+const tagasiNupp = document.querySelector("#tagasi-nupp");
+const edasiNupp = document.querySelector("#edasi-nupp");
+const raamat = document.querySelector("#raamat");
 
-function keerataLehte(suund) {
-    document.getElementById(`leht${currentPage}`).classList.remove('näidatud');
+const leht1 = document.querySelector("#leht1");
+const leht2 = document.querySelector("#leht2");
+const leht3 = document.querySelector("#leht3");
 
-    if (suund === 'edasi') {
-        currentPage = currentPage < totalPages ? currentPage + 1 : 1;
-    } else if (suund === 'tagasi') {
-        currentPage = currentPage > 1 ? currentPage - 1 : totalPages;
-    }
+// Sündmuse kuulajad
+tagasiNupp.addEventListener("click", mineTagasiLehele);
+edasiNupp.addEventListener("click", mineEdasiLehele);
 
-    document.getElementById(`leht${currentPage}`).classList.add('näidatud');
+// Loogika muutujad
+let praeguneLeht = 1;
+let lehtedeArv = 3;
+let maxLehti = lehtedeArv + 1;
+
+function avaRaamat() {
+    raamat.style.transform = "translateX(50%)";
+    tagasiNupp.style.transform = "translateX(-180px)";
+    edasiNupp.style.transform = "translateX(180px)";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById(`leht${currentPage}`).classList.add('näidatud');
-});
+function sulgeRaamat(onAlguses) {
+    if (onAlguses) {
+        raamat.style.transform = "translateX(0%)";
+    } else {
+        raamat.style.transform = "translateX(100%)";
+    }
+    
+    tagasiNupp.style.transform = "translateX(0px)";
+    edasiNupp.style.transform = "translateX(0px)";
+}
+
+function mineEdasiLehele() {
+    if (praeguneLeht < maxLehti) {
+        switch (praeguneLeht) {
+            case 1:
+                avaRaamat();
+                leht1.classList.add("flipped");
+                leht1.style.zIndex = 1;
+                break;
+            case 2:
+                leht2.classList.add("flipped");
+                leht2.style.zIndex = 2;
+                break;
+            case 3:
+                leht3.classList.add("flipped");
+                leht3.style.zIndex = 3;
+                sulgeRaamat(false);
+                break;
+            default:
+                throw new Error("Tundmatu seisund");
+        }
+        praeguneLeht++;
+    }
+}
+
+function mineTagasiLehele() {
+    if (praeguneLeht > 1) {
+        switch (praeguneLeht) {
+            case 2:
+                sulgeRaamat(true);
+                leht1.classList.remove("flipped");
+                leht1.style.zIndex = 3;
+                break;
+            case 3:
+                leht2.classList.remove("flipped");
+                leht2.style.zIndex = 2;
+                break;
+            case 4:
+                avaRaamat();
+                leht3.classList.remove("flipped");
+                leht3.style.zIndex = 1;
+                break;
+            default:
+                throw new Error("Tundmatu seisund");
+        }
+        praeguneLeht--;
+    }
+}

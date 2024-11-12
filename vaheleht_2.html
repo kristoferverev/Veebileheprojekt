@@ -15,26 +15,54 @@
         </div>
     </nav>
 
-    <h1>Pumpamiskoondis - Treeningkavad</h1>
-    
-    <div class="raamat">
-        <div class="leht" id="leht1">
-            <h2>Kava 1</h2>
-            <p>Sissejuhatus jõusaali kava 1.</p>
+
+    <!-- Tagasi nupp -->
+    <button id="tagasi-nupp">&#x2190; Tagasi</button>
+
+    <!-- Raamat -->
+    <div id="raamat" class="raamat">
+        <!-- Leht 1 -->
+        <div id="leht1" class="leht">
+            <div class="ees">
+                <div id="e1" class="esilehe-sisu">
+                    <h1>Esileht 1</h1>
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t1" class="tagumise-lehe-sisu">
+                    <h1>Tagumine 1</h1>
+                </div>
+            </div>
         </div>
-        <div class="leht" id="leht2">
-            <h2>Kava 2</h2>
-            <p>Sissejuhatus jõusaali kava 2.</p>
+        <!-- Leht 2 -->
+        <div id="leht2" class="leht">
+            <div class="ees">
+                <div id="e2" class="esilehe-sisu">
+                    <h1>Esileht 2</h1>
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t2" class="tagumise-lehe-sisu">
+                    <h1>Tagumine 2</h1>
+                </div>
+            </div>
         </div>
-        <div class="leht" id="leht3">
-            <h2>Kava 3</h2>
-            <p>Sissejuhatus jõusaali kava 3.</p>
-        </div>
-        <div class="lehe_nupud">
-        <button onclick="keerataLehte('tagasi')">← Tagasi</button>
-        <button onclick="keerataLehte('edasi')">Edasi →</button>
+        <!-- Leht 3 -->
+        <div id="leht3" class="leht">
+            <div class="ees">
+                <div id="e3" class="esilehe-sisu">
+                    <h1>Esileht 3</h1>
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t3" class="tagumise-lehe-sisu">
+                    <h1>Tagumine 3</h1>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="raamat.js"></script>
+    <!-- Edasi nupp -->
+    <button id="edasi-nupp">Edasi &#x2192;</button>
+<script src="raamat.js"></script>
 </body>
 </html>
