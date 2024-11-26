@@ -6,14 +6,19 @@ const raamat = document.querySelector("#raamat");
 const leht1 = document.querySelector("#leht1");
 const leht2 = document.querySelector("#leht2");
 const leht3 = document.querySelector("#leht3");
+const leht4 = document.querySelector("#leht4");
+const leht5 = document.querySelector("#leht5");
+
+
 
 // Sündmuse kuulajad
 tagasiNupp.addEventListener("click", mineTagasiLehele);
 edasiNupp.addEventListener("click", mineEdasiLehele);
 
+
 // Loogika muutujad
 let praeguneLeht = 1;
-let lehtedeArv = 3;
+let lehtedeArv = 5;
 let maxLehti = lehtedeArv + 1;
 
 function avaRaamat() {
@@ -48,6 +53,14 @@ function mineEdasiLehele() {
             case 3:
                 leht3.classList.add("flipped");
                 leht3.style.zIndex = 3;
+                break;
+            case 4:
+                leht4.classList.add("flipped");
+                leht4.style.zIndex = 4;
+                break
+            case 5:
+                leht5.classList.add("flipped");
+                leht5.style.zIndex = 5;
                 sulgeRaamat(false);
                 break;
             default:
@@ -63,16 +76,26 @@ function mineTagasiLehele() {
             case 2:
                 sulgeRaamat(true);
                 leht1.classList.remove("flipped");
-                leht1.style.zIndex = 3;
+                leht1.style.zIndex = 5;
                 break;
             case 3:
                 leht2.classList.remove("flipped");
-                leht2.style.zIndex = 2;
+                leht2.style.zIndex = 4;
                 break;
             case 4:
                 avaRaamat();
                 leht3.classList.remove("flipped");
-                leht3.style.zIndex = 1;
+                leht3.style.zIndex = 3;
+                break;
+            case 5:
+                avaRaamat();
+                leht4.classList.remove("flipped");
+                leht4.style.zIndex = 2;
+                break;
+            case 6:
+                avaRaamat();
+                leht5.classList.remove("flipped");
+                leht5.style.zIndex = 1;
                 break;
             default:
                 throw new Error("Tundmatu seisund");

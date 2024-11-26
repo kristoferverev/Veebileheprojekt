@@ -38,24 +38,24 @@ body{
 
 #tagasi-nupp {
     font-size: 16px;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 10px 10px;
+    background-color: #707f90;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
+    margin: 22px;
 }
 
 #edasi-nupp {
     font-size: 16px;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 10px 10px;
+    background-color: #707f90;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
+    margin: 25px;
 }
 
 #tagasi-nupp:hover,
@@ -75,8 +75,8 @@ body{
 
 .raamat {
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     transition: transform 0.5s;
 }
 
@@ -91,6 +91,7 @@ body{
 
 .ees,
 .tagumine {
+    background-image: url(https://img.freepik.com/premium-photo/notebook-paper-background-lined-notebook-paper-crumpled-paper-background_322958-5175.jpg?semt=ais_hybrid);
     background-color: white;
     position: absolute;
     width: 100%;
@@ -163,4 +164,23 @@ i {
 
 #leht3 {
     z-index: 1;
+}
+
+.kaanepilt {
+    background-image: url(kaas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+    text-align: center;
+}
+
+.kaanepilt .esilehe-sisu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
 }
