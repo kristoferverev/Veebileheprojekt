@@ -1,0 +1,59 @@
+
+body{
+    background-color: #D8B4A0;
+    padding-top:3cm;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-spacing: 2px;
+    border-color: aqua;
+    border-style: double;
+}
+
+/*tabeli veergude päised*/
+#atribuudid{
+    background-color: rgb(241, 206, 160);
+    height: 1.3cm;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*read eraldi*/
+td {
+    padding: 12px;
+}
+
+/*paarisarvulised read*/
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+/*kodulehtede lingid*/
+a {
+
+}
+
+/*sorteerimiseks vajalik*/
+.table-sortable th{
+    cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after, 
+.table-sortable .th-sort-desc::after {
+    margin-left: 10px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(213, 36, 36, 0.1);
+}
