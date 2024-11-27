@@ -155,16 +155,21 @@ i {
 
 /* Lehtede z-indeks */
 #leht1 {
-    z-index: 3;
+    z-index: 4;
 }
 
 #leht2 {
-    z-index: 2;
+    z-index: 3;
 }
 
 #leht3 {
+    z-index: 2;
+}
+
+#leht4 {
     z-index: 1;
 }
+
 
 .kaanepilt {
     background-image: url(kaas.jpg);
