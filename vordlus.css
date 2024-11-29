@@ -1,15 +1,21 @@
-
+/*vahelehe keha*/
 body{
     background-color: #D8B4A0;
-    padding-top:3cm;
+    padding-top:2.7cm;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+/*kogu tabel*/
 table {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     border-spacing: 2px;
-    border-color: aqua;
-    border-style: double;
+    border-color: antiquewhite;
+    border-style:outset;
+    table-layout: fixed;
 }
 
 /*tabeli veergude päised*/
@@ -31,9 +37,13 @@ tr:nth-child(even){
 }
 
 /*kodulehtede lingid*/
-a {
-
+a:link {
+    color:#752828;
 }
+a:visited {
+    color: #450e0e;
+}
+
 
 /*sorteerimiseks vajalik*/
 .table-sortable th{
