@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="vordlus.css">
-        <title> Pumpamiskoondis </title>
-    </head>
+        <title> Pumpamiskoondis - Jõusaalid</title>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bungee&family=Bungee+Inline&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+   </head>
+<body>
     <nav class="pais_riba">
             <div class="pais_nuppud">
                 <a href="vaheleht_1.html"><button class="nupp1">Võrdlus</button></a>
@@ -13,20 +15,18 @@
                 <a href="vaheleht_2.html"><button class="nupp3">Kavad</button></a>
             </div>
     </nav>
-<body>
 
-
-
-<table class="table table-sortable sortable">
-    <thead>
+ <!-- Tabel -->
+<table class="table table-sortable">
+    <thead class="sortable">
         <tr id="atribuudid">
             <th>Jõusaal</th>
             <td>Aadress</td>
-            <th>Ühe korra külastus</th>
-            <th>Ühe kuu külastus</th>
+            <th>Ühe korra külastus (€)</th>
+            <th>Ühe kuu külastus (€)</th>
             <th>Parkimine</th>
             <th>Suurus (m<sup>2</sup>)</th>
-            <th>Avatud</th>
+            <th>Avatud (argipäeval)</th>
             <th>Rühmatrennid (jah/ei)</th>
         </tr>
     </thead>
@@ -34,8 +34,8 @@
         <tr>
             <td><a href="https://corsagym.ee/" target="_blank">Corsagym</a></td>
             <td>Võru 79</td>
-            <td>7 </td>
-            <td>39 </td>
+            <td>7</td>
+            <td>39</td>
             <td>tasuta</td>
             <td>250</td>
             <td>05.00 - 00.00</td>
@@ -44,8 +44,8 @@
         <tr>
             <td><a href="https://www.gymeesti.ee/" target="_blank">Gym! Veeriku</a></td>
             <td>Näituse 33</td>
-            <td>6.95 ;</td>
-            <td>19 </td>
+            <td>6.95</td>
+            <td>19</td>
             <td>tasuta</td>
             <td>1167</td>
             <td>00.00 - 23.59</td>
@@ -54,8 +54,8 @@
         <tr>
             <td><a href="https://www.gymeesti.ee/" target="_blank">Gym! Tasku</a></td>
             <td>Turu 2</td>
-            <td>6.95 €</td>
-            <td>19 €</td>
+            <td>6.95</td>
+            <td>19</td>
             <td>1h tasuta</td>
             <td>1311</td>
             <td>00.00 - 23.59</td>
@@ -64,8 +64,8 @@
         <tr>
             <td><a href="https://sport.ut.ee/" target="_blank">TÜASK</a></td>
             <td>Ujula 4</td>
-            <td>10.0</td>
-            <td>35 €</td>
+            <td>10</td>
+            <td>35</td>
             <td>2h tasuta</td>
             <td>464</td>
             <td>07:00 - 22:00</td>
@@ -74,8 +74,8 @@
         <tr>
             <td><a href="https://jousport.ee/" target="_blank">SK Jõusport</a></td>
             <td>Riia 136A</td>
-            <td>6/10 €</td>
-            <td>35 €</td>
+            <td>6</td>
+            <td>35</td>
             <td>-</td>
             <td>212</td>
             <td>00:00 - 23:59</td>
@@ -84,8 +84,8 @@
         <tr>
             <td><a href="https://fitlife.ee/eeden/" target="_blank">Fitlife</a></td>
             <td>Kalda tee 1c</td>
-            <td>10.0</td>
-            <td>45/55 €</td>
+            <td>10</td>
+            <td>45</td>
             <td>tasuta</td>
             <td>410</td>
             <td>00:00 - 23:59</td>
@@ -95,7 +95,7 @@
             <td><a href="https://www.myfitness.ee/" target="_blank">Myfitness Kesklinn</a></td>
             <td>Küüni 7</td>
             <td>15</td>
-            <td>35/54 €</td>
+            <td>35</td>
             <td>tasuline</td>
             <td>887</td>
             <td>06:30 - 23:00</td>
@@ -104,8 +104,8 @@
         <tr>
             <td><a href="https://www.myfitness.ee/" target="_blank">Myfitness Annelinn</a></td>
             <td>Kalda tee 41</td>
-            <td>15 €</td>
-            <td>35/54 €</td>
+            <td>15</td>
+            <td>35</td>
             <td>tasuta</td>
             <td>880</td>
             <td>06:30 - 22:00</td>
@@ -114,8 +114,8 @@
         <tr>
             <td><a href="https://www.myfitness.ee/" target="_blank">Myfitness Lõunakeskus</a></td>
             <td>Lääneringtee 37</td>
-            <td>15 €</td>
-            <td>35/54 €</td>
+            <td>15</td>
+            <td>35</td>
             <td>tasuta</td>
             <td>604</td>
             <td>07:00 - 22:00</td>
@@ -124,8 +124,8 @@
         <tr>
             <td><a href="https://www.lemongym.ee/" target="_blank">Lemongym</a></td>
             <td>Narva mnt 27a</td>
-            <td>9.99 € (3p)</td>
-            <td>33.99 €</td>
+            <td>9.99</td>
+            <td>33.99</td>
             <td>tasuta</td>
             <td>900</td>
             <td>00:00 - 23:59</td>
@@ -134,8 +134,8 @@
         <tr>
             <td><a href="https://24-7fitness.ee/" target="_blank">24/7 Fitness Sepa</a></td>
             <td>Turu 45B</td>
-            <td>7 €</td>
-            <td>32.99 €</td>
+            <td>7</td>
+            <td>32.99</td>
             <td>tasuta</td>
             <td>900</td>
             <td>00:00 - 23:59</td>
@@ -144,8 +144,8 @@
         <tr>
             <td><a href="https://24-7fitness.ee/" target="_blank">24/7 Fitness Sõbra</a></td>
             <td>Võru 55F</td>
-            <td>7 €</td>
-            <td>32.99 €</td>
+            <td>7</td>
+            <td>32.99</td>
             <td>3h tasuta</td>
             <td>1250</td>
             <td>00:00 - 23:59</td>
@@ -154,8 +154,8 @@
         <tr>
             <td><a href="https://24-7fitness.ee/" target="_blank">24/7 Fitness Raadi</a></td>
             <td>Nõlvakaare 4</td>
-            <td>7 €</td>
-            <td>32.99 €</td>
+            <td>7</td>
+            <td>32.99</td>
             <td>tasuta</td>
             <td>550</td>
             <td>00:00 - 23:59</td>
@@ -163,7 +163,6 @@
         </tr>
     </tbody>
 </table>
-
 <script src="vordlus.js"></script>
 </body>
 </html>

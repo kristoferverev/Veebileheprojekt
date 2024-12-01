@@ -1,5 +1,6 @@
 /**
- * 
+ * kood pärit:
+ * https://www.youtube.com/watch?v=8SL_hM1a0yo&t=1220s
  * @param {HTMLTableElement} table, mida sorteerime 
  * @param {number} column, mille järgi sorteeritakse
  * @param {boolean} asc, sorteeritakse kahanevalt/kasvavalt
