@@ -1,5 +1,5 @@
 /**
- * kood pärit:
+ * suurem osa koodist pärit:
  * https://www.youtube.com/watch?v=8SL_hM1a0yo&t=1220s
  * @param {HTMLTableElement} table, mida sorteerime 
  * @param {number} column, mille järgi sorteeritakse
@@ -12,10 +12,14 @@ function sortVeerg(table, column, asc = true) {
 
     //sorteerime read
     const sortedRows = rows.sort((a, b) => {
-        const aColText = a.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
-        const bColText = b.querySelector(`td:nth-child(${ column + 1 })`).textContent.trim();
+    const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+    const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
-        return aColText > bColText ? (1 * dirMod) : (-1 * dirMod);
+    //arvude sorteerimine
+    const aColValue = isNaN(aColText) ? aColText : parseFloat(aColText.replace(/[^0-9.-]+/g, ""));
+    const bColValue = isNaN(bColText) ? bColText : parseFloat(bColText.replace(/[^0-9.-]+/g, ""));
+
+    return aColValue > bColValue ? 1 * dirMod : -1 * dirMod;
     });
 
     //eemaldab read
