@@ -1,4 +1,4 @@
-// Viited DOM-elementidele
+// Otsib HTML-ist vastavate ID-de järgi elemendid
 const tagasiNupp = document.querySelector("#tagasi-nupp");
 const edasiNupp = document.querySelector("#edasi-nupp");
 const raamat = document.querySelector("#raamat");
@@ -10,12 +10,12 @@ const leht4 = document.querySelector("#leht4");
 
 
 
-// Sündmuse kuulajad
+// Kui kasutaaja vajutab nuppu, siis käivitatakse vastav funktsioon
 tagasiNupp.addEventListener("click", mineTagasiLehele);
 edasiNupp.addEventListener("click", mineEdasiLehele);
 
 
-// Loogika muutujad
+// Raamatu liigutamine horisontaalselt ekraani keskele ja nuppude külgedele liigutamine
 let praeguneLeht = 1;
 let lehtedeArv = 4;
 let maxLehti = lehtedeArv + 1;
@@ -26,6 +26,7 @@ function avaRaamat() {
     edasiNupp.style.transform = "translateX(180px)";
 }
 
+// Raamatu sulgedes selle tagasi algusesse nihutamine
 function sulgeRaamat(onAlguses) {
     if (onAlguses) {
         raamat.style.transform = "translateX(0%)";
@@ -37,6 +38,7 @@ function sulgeRaamat(onAlguses) {
     edasiNupp.style.transform = "translateX(0px)";
 }
 
+// Funktsioon mis muudab Z-indexi, et teha järgi lehe pööramise liigutust edasi
 function mineEdasiLehele() {
     if (praeguneLeht < maxLehti) {
         switch (praeguneLeht) {
@@ -65,6 +67,7 @@ function mineEdasiLehele() {
     }
 }
 
+// Funktsioon mis muudab Z-indexi, et teha järgi lehe pööramise liigutust tagasi
 function mineTagasiLehele() {
     if (praeguneLeht > 1) {
         switch (praeguneLeht) {

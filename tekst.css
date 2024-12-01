@@ -36,56 +36,56 @@
 }
 
 /* Sisu teksti suurus */
-#t1 p1, p2 {
+#t1 p {
     font-size: 12pt;
 
 /* Esimene leht sisu */
 }
-#t1 p1:nth-of-type(1) {
+#t1 p:nth-of-type(1) {
     position: absolute;
-    top: 97px;
+    top: 81px;
     left: 20px;
 }
 
-#t1 p1:nth-of-type(2) {
+#t1 p:nth-of-type(2) {
     position: absolute;
-    top: 152px;
+    top: 136px;
     left: 20px;
 }
 
-#t1 p1:nth-of-type(3) {
+#t1 p:nth-of-type(3) {
     position: absolute;
-    top: 206px;
+    top: 190px;
     left: 20px;
 }
 
-#t1 p2:nth-of-type(1) {
+#t1 p:nth-of-type(4) {
     position: absolute;
-    top: 298px;
+    top: 282px;
     left: 20px;
 }
 
-#t1 p2:nth-of-type(2) {
+#t1 p:nth-of-type(5) {
     position: absolute;
-    top: 352px;
+    top: 336px;
     left: 20px;
 }
 
-#t1 p3:nth-of-type(1) {
+#t1 p:nth-of-type(6) {
     position: absolute;
-    top: 442px;
+    top: 427px;
     left: 20px;
 }
 
-#t1 p3:nth-of-type(2) {
+#t1 p:nth-of-type(7) {
     position: absolute;
-    top: 497px;
+    top: 481px;
     left: 20px;
 }
 
-#t1 p3:nth-of-type(3) {
+#t1 p:nth-of-type(8) {
     position: absolute;
-    top: 553px;
+    top: 535px;
     left: 20px;
 }
 
@@ -101,7 +101,7 @@
 #e2 h1 {
     text-decoration-line: underline;
 }
-#e2 p1, p2 {
+#e2 p {
     line-height: 1.15;
 }
 
@@ -119,15 +119,15 @@
 
 /* Teine leht sisu */
 
-#e2 p1:nth-of-type(1) {
+#e2 p:nth-of-type(1) {
     position: absolute;
-    top: 100px;
+    top: 85px;
     left: 65px;
 }
 
-#e2 p2:nth-of-type(1) {
+#e2 p:nth-of-type(2) {
     position: absolute;
-    top: 300px;
+    top: 285px;
     left: 65px;
 }
 
@@ -158,51 +158,51 @@
 
 /* Kolmas leht sisu */
 
-#t2 p1:nth-of-type(1) {
+#t2 p:nth-of-type(1) {
     position: absolute;
-    top: 97px;
+    top: 81px;
     left: 20px;
 }
 
-#t2 p1:nth-of-type(2) {
+#t2 p:nth-of-type(2) {
     position: absolute;
-    top: 134px;
+    top: 118px;
     left: 20px;
 }
 
-#t2 p1:nth-of-type(3) {
+#t2 p:nth-of-type(3) {
     position: absolute;
-    top: 189px;
+    top: 173px;
     left: 20px;
 }
 
-#t2 p1:nth-of-type(4) {
+#t2 p:nth-of-type(4) {
     position: absolute;
-    top: 225px;
+    top: 209px;
     left: 20px;
 }
 
-#t2 p2:nth-of-type(1) {
+#t2 p:nth-of-type(5) {
     position: absolute;
-    top: 355px;
+    top: 336px;
     left: 20px;
 }
 
-#t2 p2:nth-of-type(2) {
+#t2 p:nth-of-type(6) {
     position: absolute;
-    top: 390px;
+    top: 372px;
     left: 20px;
 }
 
-#t2 p2:nth-of-type(3) {
+#t2 p:nth-of-type(7) {
     position: absolute;
-    top: 445px;
+    top: 427px;
     left: 20px;
 }
 
-#t2 p2:nth-of-type(4) {
+#t2 p:nth-of-type(8) {
     position: absolute;
-    top: 482px;
+    top: 463px;
     left: 20px;
 }
 
@@ -218,7 +218,7 @@
 #e3 h1 {
     text-decoration-line: underline;
 }
-#e3 p1, p2 {
+#e3 p {
     line-height: 1.15;
 }
 
@@ -236,15 +236,15 @@
 
 /* Neljas leht sisu */
 
-#e3 p1:nth-of-type(1) {
+#e3 p:nth-of-type(1) {
     position: absolute;
-    top: 100px;
+    top: 85px;
     left: 65px;
 }
 
-#e3 p2:nth-of-type(1) {
+#e3 p:nth-of-type(2) {
     position: absolute;
-    top: 300px;
+    top: 285px;
     left: 65px;
 }
 
@@ -281,57 +281,57 @@
 
 /* Viies leht sisu */
 
-#t3 p1:nth-of-type(1) {
+#t3 p:nth-of-type(1) {
     position: absolute;
-    top: 97px;
+    top: 81px;
     left: 20px;
 }
 
-#t3 p1:nth-of-type(2) {
+#t3 p:nth-of-type(2) {
     position: absolute;
-    top: 134px;
+    top: 119px;
     left: 20px;
 }
 
-#t3 p1:nth-of-type(3) {
+#t3 p:nth-of-type(3) {
     position: absolute;
-    top: 171px;
+    top: 154px;
     left: 20px;
 }
 
-#t3 p1:nth-of-type(4) {
+#t3 p:nth-of-type(4) {
     position: absolute;
-    top: 207px;
+    top: 191px;
     left: 20px;
 }
 
-#t3 p2:nth-of-type(1) {
+#t3 p:nth-of-type(5) {
     position: absolute;
-    top: 281px;
+    top: 264px;
     left: 20px;
 }
 
-#t3 p2:nth-of-type(2) {
+#t3 p:nth-of-type(6) {
     position: absolute;
-    top: 318px;
+    top: 300px;
     left: 20px;
 }
 
-#t3 p2:nth-of-type(3) {
+#t3 p:nth-of-type(7) {
     position: absolute;
-    top: 355px;
+    top: 337px;
     left: 20px;
 }
 
-#t3 p2:nth-of-type(4) {
+#t3 p:nth-of-type(8) {
     position: absolute;
-    top: 391px;
+    top: 373px;
     left: 20px;
 }
 
-#t3 p3:nth-of-type(1) {
+#t3 p:nth-of-type(9) {
     position: absolute;
-    top: 461px;
+    top: 445px;
     left: 20px;
 }
 
@@ -347,7 +347,7 @@
 #e4 h1 {
     text-decoration-line: underline;
 }
-#e4 p1, p2 {
+#e4 p {
     line-height: 1.15;
 }
 
@@ -365,14 +365,14 @@
 
 /* Neljas leht sisu */
 
-#e4 p1:nth-of-type(1) {
+#e4 p:nth-of-type(1) {
     position: absolute;
-    top: 100px;
+    top: 85px;
     left: 65px;
 }
 
-#e4 p2:nth-of-type(1) {
+#e4 p:nth-of-type(2) {
     position: absolute;
-    top: 300px;
+    top: 285px;
     left: 65px;
 }
