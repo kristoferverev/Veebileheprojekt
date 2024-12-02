@@ -1,39 +1,35 @@
-.pais_riba button {
-    margin-top: 50; 
-    background-color: #D8B4A0; 
-    color: #fff; 
+.pais_riba .pais_nuppud a {
+    margin-top: 1px;
+    background-color: #D8B4A0;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
 }
-.pais_riba button:hover{
+
+.pais_riba .pais_nuppud a:hover {
     background-color: red;
 }
 
-.pais_riba{
-    position: fixed; 
+.pais_riba {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgb(251, 240, 226);
     color: white;
     padding: 1em;
-    z-index: 1000; 
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-body{
+body {
     background-color: #223843;
     padding-top: 80px;
-}
-
-.teksti_kast {
-    background-color: #fff;
-    text-align: justify;
-    padding: 30px;
-    margin: 20px auto; 
-    max-width: 600px;
-    font-size: larger;
 }
 
 #tagasi-nupp {
@@ -84,7 +80,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
@@ -190,7 +186,7 @@ i {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white; 
+    color: white;
     text-align: center;
 }
 

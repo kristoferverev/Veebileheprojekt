@@ -1,0 +1,126 @@
+/* Holjuv tekstikast vormistus */
+.holjuv_kast {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.holjuv_kast {
+    background: linear-gradient(#3498db,
+            #D8B4A0);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+/* Pealkirjade vormistus */
+.pealkirjad h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: -1px;
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.pealkirjad h2 {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Tutvustus kastide joondus ja nende vaheline ala */
+.tutvustus_kastid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* Tutvustus kastide vormistus */
+.tutvustus_kast {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* Tutvustus kastide hover effect */
+.tutvustus_kast:hover {
+    transform: translateY(-20px);
+    box-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tutvustus_kast h4 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.tutvustus_kast p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+/* Logo scroller */
+.logod_scroller{
+    overflow: hidden;
+}
+
+.firma_logod {
+    display: flex;
+    animation: logoScroll 15s linear infinite;
+    width: calc(200px * 16);
+}
+
+.logo {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+
+}
+
+@keyframes logoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 4));
+    }
+}
