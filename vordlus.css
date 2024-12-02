@@ -1,0 +1,74 @@
+/*vahelehe keha*/
+body{
+    background-color: #223843;
+    padding-top:2.7cm;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    background-image: url('lehetaga.jpg');
+}
+
+/*kogu tabel*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+    border-spacing: 2px;
+    border-color: antiquewhite;
+    border-style:outset;
+    table-layout: fixed;
+}
+
+/*tabeli veergude päised*/
+#atribuudid{
+    background-color: rgb(241, 206, 160);
+    height: 1.3cm;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*read eraldi*/
+td {
+    padding: 12px;
+}
+
+/*paarisarvulised read*/
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+/*paaritu arvulised read*/
+tr:nth-child(odd){
+    background-color: #D8B4A0;
+}
+
+/*kodulehtede lingid*/
+a:link {
+    color:#3a1313;
+}
+a:visited {
+    color: rgb(137, 2, 2);
+}
+
+
+/*sorteerimiseks nooled ja muu*/
+.table-sortable th{
+    cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after, 
+.table-sortable .th-sort-desc::after {
+    margin-left: 10px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(213, 36, 36, 0.1);
+}

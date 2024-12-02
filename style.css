@@ -1,37 +1,220 @@
-.pais_riba button {
-    margin-top: 50; 
-    background-color: #D8B4A0; 
-    color: #fff; 
+.pais_riba .pais_nuppud a {
+    margin-top: 1px;
+    background-color: #D8B4A0;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
 }
-.pais_riba button:hover{
+
+.pais_riba .pais_nuppud a:hover {
     background-color: red;
 }
 
-.pais_riba{
-    position: fixed; 
+.pais_riba {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #EFF1F3;
+    background-color: rgb(251, 240, 226);
     color: white;
     padding: 1em;
-    z-index: 1000; 
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-body{
+body {
     background-color: #223843;
     padding-top: 80px;
 }
 
-.teksti_kast {
-    background-color: #fff;
-    text-align: justify;
-    padding: 30px;
-    margin: 20px auto; 
-    max-width: 600px;
-    font-size: larger;
+#tagasi-nupp {
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: #707f90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 22px;
+}
+
+#edasi-nupp {
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: #707f90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 25px;
+}
+
+#tagasi-nupp:hover,
+#edasi-nupp:hover {
+    background-color: #0056b3;
+}
+
+.kavad_leht {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url('lehetaga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.kavad_leht::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.raamat {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    transition: transform 0.5s;
+}
+
+.leht {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.ees,
+.tagumine {
+    background-image: url(https://img.freepik.com/premium-photo/notebook-paper-background-lined-notebook-paper-crumpled-paper-background_322958-5175.jpg?semt=ais_hybrid);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.ees {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.tagumine {
+    z-index: 0;
+}
+
+.esilehe-sisu,
+.tagumise-lehe-sisu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagumise-lehe-sisu {
+    transform: rotateY(180deg);
+}
+
+/* Lehe pööramise efekt */
+.flipped .ees,
+.flipped .tagumine {
+    transform: rotateY(-180deg);
+}
+
+/* Nupud */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+/* Lehtede z-indeks */
+#leht1 {
+    z-index: 4;
+}
+
+#leht2 {
+    z-index: 3;
+}
+
+#leht3 {
+    z-index: 2;
+}
+
+#leht4 {
+    z-index: 1;
+}
+
+.kaanepilt {
+    background-image: url(kaanepilt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.kaanepilt .esilehe-sisu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+}
+
+.tagumine.kaanepilt {
+    background-image: url('tagumine.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.tagumine.kaanepilt .esilehe-sisu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 24px;
 }

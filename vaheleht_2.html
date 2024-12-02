@@ -1,22 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>
-        Pumpamiskoondis
-        </title>
+        <link rel="stylesheet" type="text/css" href="tekst.css">
+        <title>Pumpamiskoondis - Treeningkavad</title>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bungee&family=Bungee+Inline&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     </head>
-    <nav class="pais_riba">
+<body class="kavad_leht">
+        <nav class="pais_riba">
             <div class="pais_nuppud">
-                <a href="vaheleht_1.html"><button class="nupp1">Võrdlus</button></a>
-                <a href="index.html"><button class="nupp2">Kodu</button></a>
-                <a href="vaheleht_2.html"><button class="nupp3">Kavad</button></a>
+                <a href="vaheleht_1.html" class="nupp1">Võrdlus</a>
+                <a href="index.html" class="nupp2">Kodu</a>
+                <a href="vaheleht_2.html" class="nupp3">Kavad</a>
             </div>
-    </nav>
-<body>
-    <h1>
-        Pumpamiskoondis
-    </h1>
+        </nav>
+    
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <!-- Tagasi nupp -->
+    <button id="tagasi-nupp">&#x2190;</button>
 
+    <!-- Raamat -->
+    <div id="raamat" class="raamat">
+        <!-- Leht 1 -->
+        <div id="leht1" class="leht">
+            <div class="ees kaanepilt">
+                <div id="e1" class="esilehe-sisu">
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t1" class="tagumise-lehe-sisu">
+                    <h1>Push-Pull-Legs</h1>
+                    <h2>Push-päev</h2>
+                    <h2>Pull-päev</h2>
+                    <h2>Legs-päev</h2>
+                    <p>Rinnalihaste harjutused: kang- või hantlipress,<br> kaldpingil hantlipress, risttõmme ette.</p>
+                    <p>Õlgade harjutused: hantli või kangiga õlapress, <br>küljele lendamised, ülespoole suunatud ette tõmbed.</p>
+                    <p>Triitsepsi harjutused: surumised kitsalt,<br> prantsuse surumine, triitsepsitõmbed plokkmasinal.</p>
+                    <p>Selja harjutused: laia haardega lõuatõmbed, <br>horisontaalne plokktõmme, ühe käega hantli tõmme.</p>
+                    <p>Biitsepsi harjutused: biitsepsikõverdused erineva<br> kalde all hantlitega, kangiga või plokil.</p>
+                    <p>Kükkharjutused: tavaline kükk, hack-kükk<br> ja bulgaaria ühe jala kükk.</p>
+                    <p>Reie tagaosa harjutused: jõutõmme sirgete jalgadega <br> ja jalakõverdused masinal.</p>
+                    <p>Sääre harjutused: sääretõsted masinal või hantlitega.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Leht 2 -->
+        <div id="leht2" class="leht">
+            <div class="ees">
+                <div id="e2" class="esilehe-sisu">
+                    <h1>Tutvustus</h1>
+                    <h2>Kuidas töötab?</h2>
+                    <h2>Eelised</h2>
+                    <p>Push-Pull-Legs on kava jaotus, mis jagab treeningud kolme kategooriasse, keskendudes kindlatele lihasgruppidele igal treeningpäeval. See süsteem on efektiivne, kuna annab igale lihasgrupile piisavalt puhkust ja võimaldab treenida mitmeid lihasgruppe ühes treeningus.</p>
+                    <p>Skeem võimaldab treenida kõiki suuremaid lihasgruppe ühtlaselt ja tagab igale lihasgrupile vajaliku puhkuse.  Kavaga saab lihtsalt alustada, samas kogenumad saavad intensiivsust vastavalt vajadusele lisada.</p>
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t2" class="tagumise-lehe-sisu">
+                    <h1>Ülakeha-alakeha</h1>
+                    <h2>Ülakeha-päev</h2>
+                    <h2>Alakeha-päev</h2>
+                    <p>Rinnalihased: Kangipress, hantlipress kaldpingil.</p>
+                    <p>Seljalihased: Horisontaalne plokktõmme, laia haardega lõuatõmbed.</p>
+                    <p>Õlad: Hantlitega õlapress, küljele lendamised.</p>
+                    <p>Käed: Triitsepsi surumine plokil, biitsepsi<br> hantlikõverdused.</p>
+                    <p>Kükkharjutused: Kükk kangiga, Bulgaaria ühe jala kükk.</p>
+                    <p>Reie tagaosa: Jõutõmme sirgete jalgadega,<br> jalapress masinal.</p>
+                    <p>Sääred: Sääretõsted smithi masinal.</p>
+                    <p>Tuharad: Kangiga puusatõsted, jõutõmme.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Leht 3 -->
+        <div id="leht3" class="leht">
+            <div class="ees">
+                <div id="e3" class="esilehe-sisu">
+                    <h1>Tutvustus</h1>
+                    <h2>Kuidas töötab?</h2>
+                    <h2>Eelised</h2>
+                    <p>Ülakeha-alakeha treeningjaotus on populaarne ja tõhus meetod, mida kasutavad nii algajad kui ka kogenud treenijad. Treeningud jagatakse kaheks: ühel päeval keskendutakse ülakehale (rind, selg, õlad, käed) ja teisel alakehale (jalad, tuharad). See süsteem tagab tasakaalustatud lihaste arengu, võimaldab tõhusat jõu kasvatamist ning annab lihastele optimaalse taastumisaja.</p>
+                    <p>Sobib kõigile tasemetele, tasakaalustab treeningut ja võimaldab kiiret taastumist, sest lihased saavad piisavalt puhkust. Lisaks saab selle kavaga treenida kõiki suuremaid lihasgruppe vaid 2–4 treeningpäevaga nädalas, sobides hästi neile, kes eelistavad lühemaid treeningnädalaid.</p>
+                </div>
+            </div>
+            <div class="tagumine">
+                <div id="t3" class="tagumise-lehe-sisu">
+                    <h1>Kogukeha jaotus</h1>
+                    <h2>Tugevusharjutused</h2>
+                    <h2>Lihasmass ja toonus</h2>
+                    <h2>Vastupidavus</h2>
+                    <p>Kükk kangiga</p>
+                    <p>Rinnalt surumine</p>
+                    <p>Jõutõmme</p>
+                    <p>Lõuatõmbed</p>
+                    <p>Rinnalihased: Hantlitega press kaldpingil.</p>
+                    <p>Seljalihased: Plokktõmbed kitsa haardega.</p>
+                    <p>Õlad: Küljele lendamised hantlitega.</p>
+                    <p>Käed: Biitsepsi ja triitsepsi harjutused plokil.</p>
+                    <p>Tund aega endale sobivat kardiotreeningut, näiteks rattaergomeeter.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Leht 4 -->
+        <div id="leht4" class="leht">
+            <div class="ees">
+                <div id="e4" class="esilehe-sisu">
+                    <h1>Tutvustus</h1>
+                    <h2>Kuidas töötab?</h2>
+                    <h2>Eelised</h2>
+                    <p>Kogukeha treening on tõhus ja ajasäästlik, treenides kõiki suuremaid lihasgruppe igal sessioonil. Vaid 2–3 treeningpäeva nädalas piisab heade tulemuste saavutamiseks. See parandab jõudu ja lihasmassi ning sobib hästi erinevate eesmärkide ja tasemetega treenijatele.</p>
+                    <p>Kogukeha treening on tõhus ja ajasäästlik, kuna kõiki lihasgruppe treenitakse igal sessioonil, võimaldades häid tulemusi vaid 2–3 treeningpäevaga nädalas. See parandab kiiresti jõudu ja lihasmassi, tagades funktsionaalse ja tasakaalustatud arengu. Kava on paindlik ning sobib erinevatele treeningeesmärkidele ja tasemetele.</p>
+                </div>
+            </div>
+            <div class="tagumine kaanepilt">
+                <div id="tagumine-kaane-sisu" class="esilehe-sisu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edasi nupp -->
+    <button id="edasi-nupp"> &#x2192;</button>
+<script src="raamat.js"></script>
 </body>
 </html>
